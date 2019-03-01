@@ -1,0 +1,3 @@
+- Lab Oriented Project on Image Segmentation
+- 2nd Semester 2018-2019
+- Guide : Dr Sanjay Singh, CEERI Pilani
