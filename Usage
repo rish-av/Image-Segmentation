@@ -1,0 +1,19 @@
+- The semnatic-models module takes as Input the following things-
+    - Image
+    - Mask
+
+- We need to run a script in order to convert JSON File to masks which would contain the ground truth labels.
+- The script to run is createTrainIdLabelImgs.py in the following way:
+    - createTrainIdLabelImgs <path-to-directory-with-jsons> <path-to-directory-for-output>
+    - Different Annotations are made for the data
+    - Currently the scipt works fine cityscapes dataset, we can generalize it for all datasets
+
+- Make a new main file for running your model under different structures
+- Follow the steps as stated in README.md for your model.
+
+- Important:
+    - Keras Versions isn't currently compatible with the image_classifiers module being used, hence warnngs would be popped
+    - shape of the tensors:
+        - Data : (NUM_IMAGES,IMG_HEIGHT,IMG_WIDTH,CHANNELS)
+        - Mask : (NUM_IMAGES,IMG_HEIGHT,IMG_WIDTH,NO_OF_CLASSES) 
+        - Use one-hot encoding for all the pixels
