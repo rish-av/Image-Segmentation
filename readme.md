@@ -1,3 +1,4 @@
-- Lab Oriented Project on Image Segmentation
-- 2nd Semester 2018-2019
-- Guide : Dr Sanjay Singh, CEERI Pilani
+# Semantic Segmentation
+- Integrating ResNext Backbone in the segmenation_models module
+- The code is for use with Keras
+- This work for done for the partial fullfillment of LOP in 1st semsester 2018-2019
